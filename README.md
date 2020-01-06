@@ -1,4 +1,4 @@
-## debug-tsserver-client
+## debug-tsserver_client
 
 VSCode 用于调试 tsserver 的客户端配置。
 
@@ -19,14 +19,15 @@ $ git checkout v3.7.3
 $ npm i
 $ node node_modules/.bin/gulp LKG
 ```
+关于 `gulp LKG`，可参考 [TypeScript/lib/README.md](https://github.com/microsoft/TypeScript/blob/v3.7.3/lib/README.md)
 
-#### （3）修改 {TypeScript_Root}/bin/tsserver
+#### （3）修改 bin/tsserver
 ```
 #!/usr/bin/env node
 require('../built/local/tsserver.js');
 ```
 
-#### （4）新建 {TypeScript_Root}/debug/index.ts
+#### （4）新建 debug/index.ts
 ```
 const i: number = 1;
 ```
@@ -41,7 +42,7 @@ const root = {TypeScript_Root};
 
 ## 使用方式
 
-用VSCode 打开本仓库，按 `F5` 启动调试。
+用 VSCode 打开本仓库，按 `F5` 启动调试。
 
 - - -
 
